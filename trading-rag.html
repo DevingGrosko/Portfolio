@@ -78,7 +78,7 @@
           <div class="side-label">After</div>
           <div class="simple-chat">
             <div class="chat-user">Is this a good stock to buy right now?</div>
-            <div class="chat-ai"><span>AI</span> It finds relevant market commentary, similar examples, and risk considerations, then turns them into a clear answer.</div>
+            <div class="chat-ai"><span>AI</span> It finds the most relevant opinions, examples, and risks in the archive, then summarizes them into a clear answer.</div>
           </div>
           <p>A conversational interface over the same source material.</p>
         </div>
@@ -150,9 +150,9 @@
         <div class="rag-demo-search">
           <div class="search-head"><span>System searches the archive</span><em>find the useful pieces, ignore the rest</em></div>
           <div class="search-results">
-            <div><b>01</b><span><strong>Current market commentary</strong><small>The educator explains what conditions make a setup attractive or risky.</small></span><em>relevant</em></div>
-            <div><b>02</b><span><strong>Similar past example</strong><small>A comparable situation shows what the educator looked for before acting.</small></span><em>relevant</em></div>
-            <div><b>03</b><span><strong>Risk considerations</strong><small>Notes identify the warning signs that could invalidate the idea.</small></span><em>context</em></div>
+            <div><b>01</b><span><strong>What the educator likes</strong><small>The archive contains reasons this stock may be attractive.</small></span><em>relevant</em></div>
+            <div><b>02</b><span><strong>Similar past examples</strong><small>Past situations show how the educator has thought about comparable ideas.</small></span><em>relevant</em></div>
+            <div><b>03</b><span><strong>Potential risks</strong><small>The archive also contains reasons the idea could go wrong.</small></span><em>context</em></div>
           </div>
         </div>
 
@@ -160,7 +160,7 @@
 
         <div class="rag-demo-answer">
           <div class="answer-badge">LLM + retrieved evidence</div>
-          <p><strong>Answer:</strong> The setup looks promising based on the retrieved material, but the educator would likely wait for confirmation before acting. The system found similar examples, the conditions he normally looks for, and the main risks to watch.</p>
+          <p><strong>Answer:</strong> The archived material is generally positive on the stock, but it also points out several risks. The assistant brings the strongest arguments for and against the idea together so the user can quickly understand the tradeoffs.</p>
           <div class="answer-source-note">This example is simplified to show the RAG concept. The production system answers more specific questions using evidence retrieved from the real archive.</div>
         </div>
       </div>
@@ -210,16 +210,16 @@
 
         <div class="hindsight-card reveal">
           <div class="hindsight-label">One extra challenge</div>
-          <h3>Preventing hindsight from changing history</h3>
-          <p>A person may explain a decision differently after seeing how the day ended. The system keeps later explanations separate from what was actually known earlier, so an AI answer does not accidentally use hindsight to explain an earlier decision.</p>
+          <h3>Keeping the AI from making things up</h3>
+          <p>LLMs can sound confident even when they do not have the right information. This system first finds relevant material from the archive and only then asks the model to answer. If the archive does not support a claim, the system should leave it out instead of filling in the gap.</p>
           <div class="plain-timeline">
-            <div><span>Morning</span><strong>What was known then</strong></div>
+            <div><span>Find</span><strong>Retrieve relevant source material</strong></div>
             <i></i>
-            <div><span>Later</span><strong>What happened next</strong></div>
+            <div><span>Check</span><strong>Keep only supported information</strong></div>
             <i></i>
-            <div><span>Review</span><strong>What was explained afterward</strong></div>
+            <div><span>Answer</span><strong>Explain it clearly to the user</strong></div>
           </div>
-          <div class="hindsight-foot">Same day, different information available at each point.</div>
+          <div class="hindsight-foot">No supporting evidence = no confident claim.</div>
         </div>
       </div>
     </section>
