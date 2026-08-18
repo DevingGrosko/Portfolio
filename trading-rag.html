@@ -77,8 +77,8 @@
         <div class="answer-side">
           <div class="side-label">After</div>
           <div class="simple-chat">
-            <div class="chat-user">Why did the trader wait before entering?</div>
-            <div class="chat-ai"><span>AI</span> It finds the relevant commentary and explanation, then summarizes the reason using only that evidence.</div>
+            <div class="chat-user">Is this a good stock to buy right now?</div>
+            <div class="chat-ai"><span>AI</span> It finds relevant market commentary, similar examples, and risk considerations, then turns them into a clear answer.</div>
           </div>
           <p>A conversational interface over the same source material.</p>
         </div>
@@ -144,15 +144,15 @@
       <div class="rag-demo reveal">
         <div class="rag-demo-question">
           <span>User asks</span>
-          <strong>“Why did the trader wait before entering the market that morning?”</strong>
+          <strong>“Is this a good stock to buy right now?”</strong>
         </div>
 
         <div class="rag-demo-search">
           <div class="search-head"><span>System searches the archive</span><em>find the useful pieces, ignore the rest</em></div>
           <div class="search-results">
-            <div><b>01</b><span><strong>Morning commentary</strong><small>The trader describes what still needs to happen before acting.</small></span><em>relevant</em></div>
-            <div><b>02</b><span><strong>Later update</strong><small>A new market move changes the setup and the trader’s decision.</small></span><em>relevant</em></div>
-            <div><b>03</b><span><strong>Review explanation</strong><small>The trader later explains the reasoning behind the wait.</small></span><em>context</em></div>
+            <div><b>01</b><span><strong>Current market commentary</strong><small>The educator explains what conditions make a setup attractive or risky.</small></span><em>relevant</em></div>
+            <div><b>02</b><span><strong>Similar past example</strong><small>A comparable situation shows what the educator looked for before acting.</small></span><em>relevant</em></div>
+            <div><b>03</b><span><strong>Risk considerations</strong><small>Notes identify the warning signs that could invalidate the idea.</small></span><em>context</em></div>
           </div>
         </div>
 
@@ -160,8 +160,8 @@
 
         <div class="rag-demo-answer">
           <div class="answer-badge">LLM + retrieved evidence</div>
-          <p><strong>Answer:</strong> The trader initially waited because the setup had not confirmed yet. Later market movement provided the confirmation he was looking for, which changed the decision from waiting to acting.</p>
-          <div class="answer-source-note">The exact wording here is illustrative. The production system builds answers from the evidence retrieved for each real question.</div>
+          <p><strong>Answer:</strong> The setup looks promising based on the retrieved material, but the educator would likely wait for confirmation before acting. The system found similar examples, the conditions he normally looks for, and the main risks to watch.</p>
+          <div class="answer-source-note">This example is simplified to show the RAG concept. The production system answers more specific questions using evidence retrieved from the real archive.</div>
         </div>
       </div>
     </section>
