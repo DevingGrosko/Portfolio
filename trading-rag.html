@@ -77,8 +77,8 @@
         <div class="answer-side">
           <div class="side-label">After</div>
           <div class="simple-chat">
-            <div class="chat-user">Is this a good stock to buy right now?</div>
-            <div class="chat-ai"><span>AI</span> It finds the most relevant opinions, examples, and risks in the archive, then summarizes them into a clear answer.</div>
+            <div class="chat-user"> What is Dividend?</div>
+            <div class="chat-ai"><span>AI</span> Finds the most relevant opinions, examples and definitions, then summarizes them into a clear answer.</div>
           </div>
           <p>A conversational interface over the same source material.</p>
         </div>
@@ -160,7 +160,7 @@
 
         <div class="rag-demo-answer">
           <div class="answer-badge">LLM + retrieved evidence</div>
-          <p><strong>Answer:</strong> The database is generally positive on this stock, but it also points out several risks. I would dollar cost average in over the next few months rather than fully invest right now.</p>
+          <p><strong>Answer:</strong> The database is generally positive on this stock, but it also points out several risks. I would dollar cost average (DCA) over the next few months rather than invest fully right now in case of a downturn.</p>
           <div class="answer-source-note">This example is simplified to show the RAG concept. The production system answers more specific questions using evidence retrieved from the real archive.</div>
         </div>
       </div>
@@ -194,41 +194,11 @@
       </div>
     </section>
 
-    <section class="detail-section section-shell">
-      <div class="plain-grounding-grid">
-        <div class="grounding-explainer reveal">
-          <p class="section-kicker">Keeping answers trustworthy</p>
-          <h2>The model answers from what the system actually found.</h2>
-          <p>RAG is useful because the model does not have to remember this private archive from training. The system first gives it the relevant source material. The answer layer is then checked so substantive claims stay tied to that evidence.</p>
-          <div class="trust-list">
-            <div><span>✓</span><p><strong>Evidence first.</strong> Retrieve relevant records before asking the model to answer.</p></div>
-            <div><span>✓</span><p><strong>Bounded context.</strong> The answer model receives a finite evidence set rather than the whole archive.</p></div>
-            <div><span>✓</span><p><strong>Validation.</strong> Answers that do not satisfy the grounding rules can be repaired or rejected.</p></div>
-            <div><span>✓</span><p><strong>Fallbacks.</strong> If generation fails, the system can surface retrieved evidence instead of inventing an answer.</p></div>
-          </div>
-        </div>
-
-        <div class="hindsight-card reveal">
-          <div class="hindsight-label">One extra challenge</div>
-          <h3>Keeping the AI from making things up</h3>
-          <p>LLMs can sound confident even when they do not have the right information. This system first finds relevant material from the archive and only then asks the model to answer. If the archive does not support a claim, the system should leave it out instead of filling in the gap.</p>
-          <div class="plain-timeline">
-            <div><span>Find</span><strong>Retrieve relevant source material</strong></div>
-            <i></i>
-            <div><span>Check</span><strong>Keep only supported information</strong></div>
-            <i></i>
-            <div><span>Answer</span><strong>Explain it clearly to the user</strong></div>
-          </div>
-          <div class="hindsight-foot">No supporting evidence = no confident claim.</div>
-        </div>
-      </div>
-    </section>
-
     <section id="engineering" class="detail-section section-shell engineering-section">
       <div class="story-grid reveal">
         <div>
           <p class="section-kicker">Under the hood</p>
-          <h2>Technical enough to be reliable, without making the user think about it.</h2>
+          <h2>Testing is key</h2>
         </div>
         <div class="story-copy">
           <p>The user experience is simple, but the retrieval path has safeguards underneath it: query interpretation, raw and rewritten lexical search, ranking, evidence selection, structured answer generation, and automated validation.</p>
