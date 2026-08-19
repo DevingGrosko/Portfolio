@@ -3,263 +3,202 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b0d10" />
-  <meta name="description" content="Portfolio of Devin Grosko — computer science student building AI systems, retrieval pipelines, and full-stack software." />
+  <meta name="theme-color" content="#f6f4ef" />
+  <meta name="description" content="Devin Grosko — Computer Science student at McGill building AI systems, retrieval tools, and full-stack software." />
   <meta property="og:title" content="Devin Grosko — AI & Software Engineering" />
-  <meta property="og:description" content="AI systems, retrieval pipelines, and full-stack software." />
+  <meta property="og:description" content="AI systems, retrieval tools, and full-stack software." />
   <meta property="og:type" content="website" />
   <title>Devin Grosko — AI & Software Engineering</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="home.css?v=1" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Devin Grosko home">DG</a>
-    <nav aria-label="Primary navigation">
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-    </nav>
-    <a class="header-cta" href="mailto:DevinGrosko@gmail.com">Contact</a>
+  <header class="home-header">
+    <div class="home-shell header-inner">
+      <a class="wordmark" href="#top">Devin Grosko</a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="header-link" href="mailto:DevinGrosko@gmail.com">Contact</a>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span>Computer Science @ McGill</div>
-        <h1>I build AI systems and software that turn messy data into useful products.</h1>
-        <p class="hero-lede">I’m Devin Grosko, a computer science student focused on LLM systems, retrieval, machine learning, and full-stack engineering.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">View projects <span aria-hidden="true">↘</span></a>
-          <a class="button button-secondary" href="resume.html" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
+    <section class="home-shell hero-simple">
+      <div class="hero-text reveal">
+        <p class="hero-eyebrow">Computer Science @ McGill · AI / Software Engineering</p>
+        <h1>Hi, I’m Devin. I build AI systems and software that make messy information useful.</h1>
+        <p class="hero-intro">I’m interested in LLMs, retrieval, machine learning, and the engineering needed to turn those ideas into products people can actually use.</p>
+        <div class="hero-actions-simple">
+          <a class="primary-link" href="#projects">View my work</a>
+          <a class="secondary-link" href="resume.html" target="_blank" rel="noreferrer">Resume ↗</a>
         </div>
-        <div class="social-row" aria-label="Social links">
+        <div class="hero-socials">
           <a href="https://github.com/DevingGrosko" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/devin-grosko" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="mailto:DevinGrosko@gmail.com">Email ↗</a>
         </div>
       </div>
 
-      <div class="hero-panel reveal" aria-label="Technical snapshot">
-        <div class="terminal-bar">
-          <span></span><span></span><span></span>
-          <p>devin / current_focus</p>
-        </div>
-        <div class="terminal-body">
-          <div class="code-line"><span class="ln">01</span><span class="muted">const</span> focus = [</div>
-          <div class="code-line indent"><span class="ln">02</span><span class="string">"LLM + RAG systems"</span>,</div>
-          <div class="code-line indent"><span class="ln">03</span><span class="string">"ML engineering"</span>,</div>
-          <div class="code-line indent"><span class="ln">04</span><span class="string">"full-stack products"</span></div>
-          <div class="code-line"><span class="ln">05</span>];</div>
-          <div class="terminal-divider"></div>
-          <div class="metric-grid">
-            <div><strong>3,000+</strong><span>community users served</span></div>
-            <div><strong>4,454</strong><span>screenshots processed</span></div>
-            <div><strong>300+</strong><span>automated tests</span></div>
-            <div><strong>253</strong><span>trading days structured</span></div>
-          </div>
+      <div class="portrait-card reveal" aria-label="Portrait of Devin Grosko">
+        <div class="portrait-photo" role="img" aria-label="Devin Grosko headshot"></div>
+        <div class="portrait-note">
+          <span>Currently</span>
+          <p>Preparing for an AI software testing co-op at MSA Safety.</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section-shell section-block">
-      <div class="section-heading reveal">
-        <div>
-          <p class="section-kicker">Selected work</p>
-          <h2>Projects that shipped.</h2>
-        </div>
-        <p>AI infrastructure, retrieval systems, browser ML, and full-stack applications built around real constraints and real data.</p>
+    <section id="projects" class="home-shell home-section">
+      <div class="section-intro reveal">
+        <p class="section-label">Selected projects</p>
+        <h2>Things I’ve built.</h2>
+        <p>Three projects that best show how I work across AI, data, and software engineering.</p>
       </div>
 
-      <div class="projects-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-visual rag-visual" aria-hidden="true">
-            <div class="rag-query">“What did the mentor expect before the open?”</div>
-            <div class="rag-flow">
-              <span>query</span><i>→</i><span>scope</span><i>→</i><span>retrieve</span><i>→</i><span>reason</span>
-            </div>
-            <div class="rag-results">
-              <div><b>01</b><span>premarket_2026-01-21</span><em>0.94</em></div>
-              <div><b>02</b><span>episode_short_1051</span><em>0.89</em></div>
-              <div><b>03</b><span>concept_SSMT</span><em>0.83</em></div>
-            </div>
-          </div>
-          <div class="project-copy">
-            <div class="project-meta"><span>AI / Retrieval</span><span>2026</span></div>
+      <div class="featured-projects">
+        <article class="project-row reveal">
+          <div class="project-copy-simple">
+            <div class="project-topline"><span>AI / Retrieval</span><span>2026</span></div>
             <h3>Trading RAG Assistant</h3>
-            <p>Designed and deployed a source-grounded RAG assistant for a stock-market education community with more than 3,000 daily active members.</p>
-            <ul class="project-points">
-              <li>Structured 253 trading days and 4,454 screenshots into 600+ records and a 35-concept knowledge base.</li>
-              <li>Built deterministic scoping, BM25 retrieval, metadata ranking, query rewriting, provenance-aware evidence selection, and structured LLM outputs.</li>
-              <li>Backed the system with 300+ unit, integration, and regression tests.</li>
-            </ul>
-            <div class="stack"><span>Python</span><span>RAG</span><span>BM25</span><span>LLMs</span><span>Discord API</span></div>
-            <div class="project-links">
-              <a href="https://github.com/DevingGrosko/TradingResearchPipeline" target="_blank" rel="noreferrer">Public pipeline ↗</a>
+            <p>Built an AI assistant for a stock-market education community that searches a large archive of commentary, screenshots, and reviews, then answers questions using the relevant evidence it finds.</p>
+            <div class="project-stats-inline"><span><strong>253</strong> trading days</span><span><strong>4,454</strong> screenshots</span><span><strong>3,000+</strong> community users</span></div>
+            <div class="tech-list">Python · RAG · LLMs · BM25 · Discord API</div>
+            <div class="project-actions-simple">
+              <a class="primary-link small" href="trading-rag.html">Explore project</a>
+              <a class="text-link" href="https://github.com/DevingGrosko/TradingResearchPipeline" target="_blank" rel="noreferrer">Public code ↗</a>
             </div>
+          </div>
+          <div class="project-art rag-art" aria-hidden="true">
+            <div class="rag-bubble">Is this a good stock to buy?</div>
+            <div class="rag-step-row"><span>Ask</span><i>→</i><span>Find evidence</span><i>→</i><span>Answer</span></div>
+            <div class="rag-answer-card"><b>AI</b><p>Here’s what the archive says, including the main reasons for and against the idea.</p></div>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-visual video-visual" aria-hidden="true">
-            <div class="video-window">
-              <div class="video-frame">
-                <div class="play">▶</div>
-                <span>00:42</span>
-              </div>
-              <div class="timeline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <div class="transcript-lines"><span></span><span></span><span></span></div>
-            </div>
-          </div>
-          <div class="project-copy">
-            <div class="project-meta"><span>Browser ML</span><span>2026</span></div>
+        <article class="project-row reverse reveal">
+          <div class="project-copy-simple">
+            <div class="project-topline"><span>Browser ML</span><span>2026</span></div>
             <h3>Video Context Studio</h3>
-            <p>A privacy-preserving web app that converts uploaded videos into timestamped frames, transcripts, and LLM-ready context packages entirely in the browser.</p>
-            <div class="stack"><span>Next.js</span><span>TypeScript</span><span>Whisper</span><span>WebGPU</span><span>FFmpeg.wasm</span></div>
-            <div class="project-links">
-              <a href="https://devinggrosko.github.io/video-context-studio/" target="_blank" rel="noreferrer">Live demo ↗</a>
-              <a href="https://github.com/DevingGrosko/video-context-studio" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <p>A privacy-focused web app that turns uploaded videos into timestamped frames, transcripts, and LLM-ready context packages directly in the browser.</p>
+            <div class="tech-list">Next.js · TypeScript · Whisper · WebGPU · FFmpeg.wasm</div>
+            <div class="project-actions-simple">
+              <a class="primary-link small" href="https://devinggrosko.github.io/video-context-studio/" target="_blank" rel="noreferrer">Live demo ↗</a>
+              <a class="text-link" href="https://github.com/DevingGrosko/video-context-studio" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-art video-art" aria-hidden="true">
+            <div class="video-card-simple">
+              <div class="video-screen-simple"><span>▶</span><small>00:42</small></div>
+              <div class="video-progress"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="transcript-simple"><b>00:42</b><p>Transcript text aligned with the exact video moment.</p></div>
             </div>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-visual ticket-visual" aria-hidden="true">
-            <div class="ticket-top"><span>TicketSignal</span><em>market history</em></div>
-            <svg viewBox="0 0 520 210" role="img" aria-label="Stylized ticket price chart">
-              <defs>
-                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="currentColor" stop-opacity=".28"/>
-                  <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
-                </linearGradient>
-              </defs>
-              <path class="grid-line" d="M20 35H500M20 90H500M20 145H500M20 195H500" />
-              <path class="area" d="M20 165 C70 145,95 152,125 126 S190 95,220 110 S285 148,320 112 S375 54,410 76 S465 113,500 42 L500 195 L20 195Z" />
-              <path class="chart-line" d="M20 165 C70 145,95 152,125 126 S190 95,220 110 S285 148,320 112 S375 54,410 76 S465 113,500 42" />
-            </svg>
-          </div>
-          <div class="project-copy">
-            <div class="project-meta"><span>Full Stack / Data</span><span>2025</span></div>
+        <article class="project-row reveal">
+          <div class="project-copy-simple">
+            <div class="project-topline"><span>Full Stack / Data</span><span>2025</span></div>
             <h3>TicketSignal</h3>
-            <p>A commissioned Flask application for collecting ticket listings, storing historical price snapshots, and analyzing price movement and buying windows.</p>
-            <div class="stack"><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>Selenium</span><span>scikit-learn</span></div>
-            <div class="project-links">
-              <a href="https://bunnyjeff.pythonanywhere.com/" target="_blank" rel="noreferrer">Live demo ↗</a>
-              <a href="https://github.com/DevingGrosko/TicketPricePredictor-Public" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <p>A commissioned Flask app that collects ticket listings, stores historical price snapshots, and helps a client understand how prices change over time.</p>
+            <div class="tech-list">Flask · SQLAlchemy · SQLite · Selenium · scikit-learn</div>
+            <div class="project-actions-simple">
+              <a class="primary-link small" href="https://bunnyjeff.pythonanywhere.com/" target="_blank" rel="noreferrer">Live demo ↗</a>
+              <a class="text-link" href="https://github.com/DevingGrosko/TicketPricePredictor-Public" target="_blank" rel="noreferrer">GitHub ↗</a>
             </div>
           </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-visual cnn-visual" aria-hidden="true">
-            <div class="digit">7</div>
-            <div class="arrow">→</div>
-            <div class="feature-maps">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <div class="arrow">→</div>
-            <div class="prediction"><span>7</span><small>99.4%</small></div>
-          </div>
-          <div class="project-copy">
-            <div class="project-meta"><span>Machine Learning</span><span>2026</span></div>
-            <h3>MNIST CNN Visualizer</h3>
-            <p>A PyTorch training and inspection pipeline for probing convolution kernels, feature maps, activations, logits, and prediction probabilities.</p>
-            <div class="stack"><span>Python</span><span>PyTorch</span><span>Torchvision</span><span>Matplotlib</span></div>
-            <div class="project-links">
-              <a href="https://github.com/DevingGrosko/MNIST-CNN-Visualizer" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <div class="project-art ticket-art" aria-hidden="true">
+            <div class="ticket-card-simple">
+              <div class="ticket-card-head"><span>Ticket price history</span><b>$</b></div>
+              <svg viewBox="0 0 520 200" aria-hidden="true">
+                <path class="chart-grid" d="M20 40H500M20 90H500M20 140H500M20 185H500" />
+                <path class="chart-fill" d="M20 160 C80 150,95 125,140 130 S210 92,250 110 S325 155,355 112 S425 78,500 45 L500 185 L20 185Z" />
+                <path class="chart-line-simple" d="M20 160 C80 150,95 125,140 130 S210 92,250 110 S325 155,355 112 S425 78,500 45" />
+              </svg>
             </div>
           </div>
         </article>
       </div>
-    </section>
 
-    <section id="experience" class="section-shell section-block">
-      <div class="section-heading reveal">
+      <div class="other-project reveal">
         <div>
-          <p class="section-kicker">Experience</p>
-          <h2>Building across AI and software.</h2>
+          <span>Other project</span>
+          <h3>MNIST CNN Visualizer</h3>
+          <p>PyTorch training and inspection tools for exploring convolution kernels, feature maps, activations, logits, and prediction probabilities.</p>
+        </div>
+        <div class="other-project-links">
+          <span>Python · PyTorch · Torchvision</span>
+          <a href="https://github.com/DevingGrosko/MNIST-CNN-Visualizer" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
+    </section>
 
-      <div class="timeline-list">
-        <article class="timeline-item reveal">
-          <div class="timeline-date">Sep — Dec 2026</div>
-          <div class="timeline-marker"><span></span></div>
-          <div class="timeline-content">
-            <div class="role-row"><h3>AI for Software Testing & Quality Engineering Co-op</h3><span>MSA Safety</span></div>
-            <p>Researching and prototyping AI applications for test selection, prioritization, defect triage, root-cause analysis, and test-result summarization. Building agentic workflows and AI-assisted engineering automation.</p>
-            <div class="stack"><span>Python</span><span>AI Agents</span><span>LLM APIs</span><span>Software Testing</span></div>
+    <section id="experience" class="home-shell home-section">
+      <div class="section-intro reveal">
+        <p class="section-label">Experience</p>
+        <h2>Where I’ve worked.</h2>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-item reveal">
+          <div class="experience-date">Sep — Dec 2026</div>
+          <div class="experience-main">
+            <div class="experience-heading"><div><h3>MSA Safety</h3><p>Incoming AI for Software Testing & Quality Engineering Co-op</p></div><span>Cranberry Township, PA</span></div>
+            <p class="experience-description">Selected to research and prototype AI applications for software testing, including test prioritization, defect triage, root-cause analysis, and engineering workflow automation.</p>
           </div>
         </article>
 
-        <article class="timeline-item reveal">
-          <div class="timeline-date">Mar — Aug 2026</div>
-          <div class="timeline-marker"><span></span></div>
-          <div class="timeline-content">
-            <div class="role-row"><h3>Contract AI Software Developer</h3><span>Vincere Aut Mori</span></div>
-            <p>Built and deployed a retrieval-augmented assistant over a large archive of trading commentary, screenshots, transcripts, and structured evidence for a 3,000+ member education community.</p>
-            <div class="stack"><span>RAG</span><span>Retrieval</span><span>LLMs</span><span>Evaluation</span></div>
+        <article class="experience-item reveal">
+          <div class="experience-date">Mar — Aug 2026</div>
+          <div class="experience-main">
+            <div class="experience-heading"><div><h3>Vincere Aut Mori</h3><p>Contract AI Software Developer</p></div><span>Remote</span></div>
+            <p class="experience-description">Built and deployed the Trading RAG Assistant over a large archive of trading commentary, transcripts, screenshots, and structured evidence.</p>
           </div>
         </article>
 
-        <article class="timeline-item reveal">
-          <div class="timeline-date">Jul — Sep 2025</div>
-          <div class="timeline-marker"><span></span></div>
-          <div class="timeline-content">
-            <div class="role-row"><h3>Freelance Software Developer</h3><span>Private Client</span></div>
-            <p>Built and delivered a commissioned full-stack application for collecting, storing, visualizing, and analyzing ticket-price changes.</p>
-            <div class="stack"><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>Selenium</span></div>
+        <article class="experience-item reveal">
+          <div class="experience-date">Jul — Sep 2025</div>
+          <div class="experience-main">
+            <div class="experience-heading"><div><h3>Private Client</h3><p>Freelance Software Developer</p></div><span>Remote</span></div>
+            <p class="experience-description">Built and delivered a full-stack ticket-price analytics application for collecting, storing, visualizing, and analyzing market changes.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="about" class="section-shell section-block about-grid">
-      <div class="about-copy reveal">
-        <p class="section-kicker">About</p>
-        <h2>Computer science with an interest in how intelligent systems actually behave.</h2>
-        <p>I study Computer Science at McGill University, where my coursework includes algorithms, theory of computation, computer systems, software design, linear algebra, and calculus. I’m most interested in AI systems that require both model-level thinking and solid engineering around them.</p>
-        <p>My recent work has centered on retrieval, LLM workflows, machine learning, data pipelines, and building interfaces that make complex systems usable.</p>
-        <div class="about-actions">
-          <a href="resume.html" target="_blank" rel="noreferrer">Read resume ↗</a>
-          <a href="mailto:DevinGrosko@gmail.com">DevinGrosko@gmail.com ↗</a>
-        </div>
+    <section id="about" class="home-shell home-section about-simple">
+      <div class="about-lead reveal">
+        <p class="section-label">About</p>
+        <h2>I like building AI systems that have to work with real, messy data.</h2>
       </div>
-
-      <div class="skills-panel reveal">
-        <div class="skill-group">
-          <span>Languages</span>
-          <p>Python · TypeScript · JavaScript · Java · SQL · Bash · HTML/CSS</p>
-        </div>
-        <div class="skill-group">
-          <span>AI & ML</span>
-          <p>PyTorch · scikit-learn · Hugging Face · LangChain · LangGraph · RAG · Prompt Engineering</p>
-        </div>
-        <div class="skill-group">
-          <span>Web & Data</span>
-          <p>Next.js · React · Flask · Django · SQLAlchemy · SQLite · REST APIs · pandas · NumPy</p>
-        </div>
-        <div class="skill-group">
-          <span>Engineering</span>
-          <p>Unit / Integration / Regression Testing · CI/CD · GitHub Actions · pytest · Selenium</p>
+      <div class="about-body reveal">
+        <p>I study Computer Science at McGill University with minors in Economics and Philosophy. My recent work has focused on retrieval, LLM workflows, machine learning, data pipelines, and full-stack software.</p>
+        <p>I’m especially interested in the engineering around AI models: how information is represented, retrieved, tested, and turned into a reliable user experience.</p>
+        <div class="about-links-simple">
+          <a href="resume.html" target="_blank" rel="noreferrer">Resume ↗</a>
+          <a href="https://github.com/DevingGrosko" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/devin-grosko" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </div>
     </section>
 
-    <section class="contact-band section-shell reveal">
-      <p>Have an interesting AI or software problem?</p>
-      <a href="mailto:DevinGrosko@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+    <section class="home-shell contact-simple reveal">
+      <div>
+        <p class="section-label">Contact</p>
+        <h2>Want to talk about AI or software?</h2>
+      </div>
+      <a class="primary-link" href="mailto:DevinGrosko@gmail.com">DevinGrosko@gmail.com</a>
     </section>
   </main>
 
-  <footer class="site-footer section-shell">
-    <span>© <span id="year"></span> Devin Grosko</span>
-    <div>
-      <a href="https://github.com/DevingGrosko" target="_blank" rel="noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/devin-grosko" target="_blank" rel="noreferrer">LinkedIn</a>
+  <footer class="home-footer">
+    <div class="home-shell footer-inner">
+      <span>© <span id="year"></span> Devin Grosko</span>
+      <span>Computer Science @ McGill</span>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
