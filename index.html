@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f6f4ef" />
-  <meta name="description" content="Devin Grosko — Computer Science student at McGill building AI systems, retrieval tools, and full-stack software." />
-  <meta property="og:title" content="Devin Grosko — AI & Software Engineering" />
-  <meta property="og:description" content="AI systems, retrieval tools, and full-stack software." />
+  <meta name="description" content="Devin Grosko — Computer Science student at McGill building full-stack applications, data pipelines, and applied AI systems." />
+  <meta property="og:title" content="Devin Grosko — Software Engineering & AI" />
+  <meta property="og:description" content="Full-stack applications, data pipelines, testing, and applied AI." />
   <meta property="og:type" content="website" />
-  <title>Devin Grosko — AI & Software Engineering</title>
+  <title>Devin Grosko — Software Engineering & AI</title>
   <link rel="stylesheet" href="home.css?v=1" />
   <link rel="stylesheet" href="portrait.css?v=1" />
 </head>
@@ -28,9 +28,9 @@
   <main id="top">
     <section class="home-shell hero-simple">
       <div class="hero-text reveal">
-        <p class="hero-eyebrow">Computer Science @ McGill · AI / Software Engineering</p>
+        <p class="hero-eyebrow">Computer Science @ McGill · Software Engineering / AI</p>
         <h1>Hi, I’m Devin</h1>
-        <p class="hero-intro">I’m interested in LLMs, machine learning, and turning ideas into products people can actually use.</p>
+        <p class="hero-intro">I build full-stack applications, data pipelines, and AI tools, with a focus on reliable software people can actually use.</p>
         <div class="hero-actions-simple">
           <a class="primary-link" href="#projects">View my work</a>
           <a class="secondary-link" href="resume.html" target="_blank" rel="noreferrer">Resume ↗</a>
@@ -51,35 +51,40 @@
       <div class="section-intro reveal">
         <p class="section-label">Selected projects</p>
         <h2>Things I’ve built</h2>
-        <p>Three projects that best show how I work across AI, data, and software engineering.</p>
+        <p>A selection of my work across web applications, data systems, and applied AI.</p>
       </div>
 
       <div class="featured-projects">
         <article class="project-row reveal">
           <div class="project-copy-simple">
-            <div class="project-topline"><span>AI / Retrieval</span><span>2026</span></div>
-            <h3>Trading RAG Assistant</h3>
-            <p>Built an AI assistant for a stock-market education community that searches a large archive of commentary, screenshots, and reviews, then answers questions using the relevant evidence it finds.</p>
-            <div class="project-stats-inline"><span><strong>253</strong> trading days</span><span><strong>4,454</strong> screenshots</span><span><strong>3,000+</strong> community users</span></div>
-            <div class="tech-list">Python · RAG · LLMs · BM25 · Discord API</div>
+            <div class="project-topline"><span>Full Stack / Data Platform</span><span>2025 — Present</span></div>
+            <h3>Ticket Price Predictor</h3>
+            <p>Built an automated ticket-market data platform that tracks section-level prices for MLB, NFL, and NHL games, stores historical snapshots, and visualizes how prices move as game day approaches.</p>
+            <div class="project-stats-inline"><span><strong>3 leagues</strong> MLB, NFL & NHL</span><span><strong>Automated</strong> adaptive collection</span><span><strong>Section-level</strong> prices & maps</span></div>
+            <div class="tech-list">Python · Flask · JavaScript · SQLAlchemy · SQLite · Selenium</div>
             <div class="project-actions-simple">
-              <a class="primary-link small" href="trading-rag.html">Explore project</a>
-              <a class="text-link" href="https://github.com/DevingGrosko/TradingResearchPipeline" target="_blank" rel="noreferrer">Public code ↗</a>
+              <a class="primary-link small" href="https://bunnyjeff.pythonanywhere.com/" target="_blank" rel="noreferrer">Live demo ↗</a>
+              <a class="text-link" href="https://github.com/DevingGrosko/TicketPricePredictor-Public" target="_blank" rel="noreferrer">GitHub ↗</a>
             </div>
           </div>
-          <div class="project-art rag-art" aria-hidden="true">
-            <div class="rag-bubble">What is the S&P 500?</div>
-            <div class="rag-step-row"><span>Ask</span><i>→</i><span>Find evidence</span><i>→</i><span>Answer</span></div>
-            <div class="rag-answer-card"><b>AI</b><p>The S&P 500 is a list that tracks the health and performance of 500 large U.S. companies.</p></div>
+          <div class="project-art ticket-art" aria-hidden="true">
+            <div class="ticket-card-simple">
+              <div class="ticket-card-head"><span>MLB · NFL · NHL price history</span><b>3</b></div>
+              <svg viewBox="0 0 520 200" aria-hidden="true">
+                <path class="chart-grid" d="M20 40H500M20 90H500M20 140H500M20 185H500" />
+                <path class="chart-fill" d="M20 160 C80 150,95 125,140 130 S210 92,250 110 S325 155,355 112 S425 78,500 45 L500 185 L20 185Z" />
+                <path class="chart-line-simple" d="M20 160 C80 150,95 125,140 130 S210 92,250 110 S325 155,355 112 S425 78,500 45" />
+              </svg>
+            </div>
           </div>
         </article>
 
         <article class="project-row reverse reveal">
           <div class="project-copy-simple">
-            <div class="project-topline"><span>Browser ML</span><span>2026</span></div>
-            <h3>Video to Image for LLM's</h3>
-            <p>A privacy-focused web app that turns uploaded videos into individual frames and transcript. Perfect for an LLM to view and understand.</p>
-            <div class="tech-list">Next.js · TypeScript · Whisper · WebGPU · FFmpeg.wasm</div>
+            <div class="project-topline"><span>Frontend / Browser ML</span><span>2026</span></div>
+            <h3>Video Context Studio</h3>
+            <p>Built a React and Next.js application that turns videos into timestamped frames and transcripts. Video processing and Whisper transcription run locally in the browser, with automated checks and deployment through GitHub Actions.</p>
+            <div class="tech-list">React · Next.js · TypeScript · WebGPU · FFmpeg.wasm · GitHub Actions</div>
             <div class="project-actions-simple">
               <a class="primary-link small" href="https://devinggrosko.github.io/video-context-studio/" target="_blank" rel="noreferrer">Live demo ↗</a>
               <a class="text-link" href="https://github.com/DevingGrosko/video-context-studio" target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -96,25 +101,20 @@
 
         <article class="project-row reveal">
           <div class="project-copy-simple">
-            <div class="project-topline"><span>Full Stack / Data Platform</span><span>2025 — Present</span></div>
-            <h3>Ticket Price Predictor</h3>
-            <p>Built an automated ticket-market data platform that tracks section-level prices for MLB, NFL, and NHL games, stores historical snapshots, and visualizes how prices move as game day approaches.</p>
-            <div class="project-stats-inline"><span><strong>3 leagues</strong> MLB, NFL & NHL</span><span><strong>Automated</strong> adaptive collection</span><span><strong>Section-level</strong> prices & maps</span></div>
-            <div class="tech-list">Python · Flask · SQLAlchemy · Selenium · GitHub Actions · SQLite</div>
+            <div class="project-topline"><span>Backend / Data / AI</span><span>2026</span></div>
+            <h3>Trading RAG Assistant</h3>
+            <p>Built and deployed a Python service that turns trading archives into searchable records and delivers source-grounded answers through Discord. Added 300+ unit, integration, and regression tests across the retrieval pipeline.</p>
+            <div class="project-stats-inline"><span><strong>253</strong> trading days</span><span><strong>4,454</strong> screenshots</span><span><strong>3,000+</strong> community users</span></div>
+            <div class="tech-list">Python · LangGraph · BM25 · Discord API · Automated Testing</div>
             <div class="project-actions-simple">
-              <a class="primary-link small" href="https://bunnyjeff.pythonanywhere.com/" target="_blank" rel="noreferrer">Live demo ↗</a>
-              <a class="text-link" href="https://github.com/DevingGrosko/TicketPricePredictor-Public" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a class="primary-link small" href="trading-rag.html">Explore project</a>
+              <a class="text-link" href="https://github.com/DevingGrosko/TradingResearchPipeline" target="_blank" rel="noreferrer">Public code ↗</a>
             </div>
           </div>
-          <div class="project-art ticket-art" aria-hidden="true">
-            <div class="ticket-card-simple">
-              <div class="ticket-card-head"><span>MLB · NFL · NHL price history</span><b>3</b></div>
-              <svg viewBox="0 0 520 200" aria-hidden="true">
-                <path class="chart-grid" d="M20 40H500M20 90H500M20 140H500M20 185H500" />
-                <path class="chart-fill" d="M20 160 C80 150,95 125,140 130 S210 92,250 110 S325 155,355 112 S425 78,500 45 L500 185 L20 185Z" />
-                <path class="chart-line-simple" d="M20 160 C80 150,95 125,140 130 S210 92,250 110 S325 155,355 112 S425 78,500 45" />
-              </svg>
-            </div>
+          <div class="project-art rag-art" aria-hidden="true">
+            <div class="rag-bubble">What is the S&P 500?</div>
+            <div class="rag-step-row"><span>Ask</span><i>→</i><span>Find evidence</span><i>→</i><span>Answer</span></div>
+            <div class="rag-answer-card"><b>AI</b><p>The S&P 500 is a list that tracks the health and performance of 500 large U.S. companies.</p></div>
           </div>
         </article>
       </div>
@@ -141,10 +141,10 @@
 
       <div class="experience-list">
         <article class="experience-item reveal">
-          <div class="experience-date">Sep — Dec 2026</div>
+          <div class="experience-date">Sep 2026 — Present</div>
           <div class="experience-main">
-            <div class="experience-heading"><div><h3>MSA Safety</h3><p>Incoming AI for Software Testing & Quality Engineering Co-op</p></div><span>Cranberry Township, PA</span></div>
-            <p class="experience-description">Selected to research and prototype AI applications for software testing, including test prioritization, defect triage, root-cause analysis, and engineering workflow automation.</p>
+            <div class="experience-heading"><div><h3>MSA Safety</h3><p>AI for Software Testing & Quality Engineering Co-op</p></div><span>Cranberry Township, PA</span></div>
+            <p class="experience-description">Developing Python tools for test selection and failure triage, using code changes and test history to help engineers prioritize tests. Working with LLMs and Bamboo CI/CD workflows to support software quality.</p>
           </div>
         </article>
 
@@ -152,7 +152,7 @@
           <div class="experience-date">Mar — Aug 2026</div>
           <div class="experience-main">
             <div class="experience-heading"><div><h3>Vincere Aut Mori</h3><p>Contract AI Software Developer</p></div><span>Remote</span></div>
-            <p class="experience-description">Built and deployed the Trading RAG Assistant over a large archive of trading commentary, transcripts, screenshots, and structured evidence.</p>
+            <p class="experience-description">Built and deployed a Python service integrated with Discord, developed data pipelines for 4,400+ screenshots and trading archives, and added 300+ automated tests for the RAG assistant.</p>
           </div>
         </article>
 
@@ -160,7 +160,7 @@
           <div class="experience-date">Jul — Sep 2025</div>
           <div class="experience-main">
             <div class="experience-heading"><div><h3>Private Client</h3><p>Freelance Software Developer</p></div><span>Remote</span></div>
-            <p class="experience-description">Built and delivered a full-stack ticket-price analytics application for collecting, storing, visualizing, and analyzing market changes.</p>
+            <p class="experience-description">Delivered a full-stack Flask application with a SQLAlchemy and SQLite data model, automated Selenium ingestion, interactive visualizations, and deployment on PythonAnywhere.</p>
           </div>
         </article>
       </div>
@@ -169,15 +169,15 @@
     <section id="about" class="home-shell home-section about-simple">
       <div class="about-lead reveal">
         <p class="section-label">About</p>
-        <h2>I like building AI systems that have to work with real, messy data.</h2>
+        <h2>I like taking software from an idea to a working product.</h2>
       </div>
       <div class="about-body reveal">
-        <p>I study Computer Science at McGill University with minors in Economics and Philosophy. My recent work has focused on retrieval, LLM workflows, machine learning, data pipelines, and full-stack software.</p>
-        <p>I’m especially interested in the engineering around AI models: how information is represented, retrieved, tested, and turned into a reliable user experience.</p>
+        <p>I study Computer Science at McGill University with a minor in Economics. My work spans frontend interfaces, backend services, databases, and automated testing, using Python, TypeScript, React, and Flask.</p>
+        <p>I enjoy connecting those pieces into useful applications and making them reliable through testing and thoughtful data design. AI is part of that work, from retrieval systems to models that run in the browser. I’m interested in both software engineering and applied AI roles.</p>
         <div class="about-links-simple">
           <a href="resume.html" target="_blank" rel="noreferrer">Resume ↗</a>
           <a href="https://github.com/DevingGrosko" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/devin-grosko" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/devin-grosko-759a92289/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </div>
     </section>
@@ -185,7 +185,7 @@
     <section class="home-shell contact-simple reveal">
       <div>
         <p class="section-label">Contact</p>
-        <h2>Want to talk about AI or software?</h2>
+        <h2>Want to talk software, AI, or opportunities?</h2>
       </div>
       <a class="primary-link" href="mailto:DevinGrosko@gmail.com">DevinGrosko@gmail.com</a>
     </section>

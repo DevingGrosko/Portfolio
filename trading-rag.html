@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f6f4ef" />
-  <meta name="description" content="How Devin Grosko built a RAG system that turns a large trading archive into a searchable AI knowledge base." />
+  <meta name="description" content="How Devin Grosko built and tested a Python data pipeline and Discord service for source-grounded retrieval." />
   <meta property="og:title" content="Trading RAG Assistant — Devin Grosko" />
-  <meta property="og:description" content="From thousands of messy source files to grounded AI answers." />
+  <meta property="og:description" content="Data pipelines, retrieval architecture, Discord integration, and 300+ automated tests." />
   <meta property="og:type" content="website" />
   <title>Trading RAG Assistant — Devin Grosko</title>
   <link rel="stylesheet" href="styles.css?v=3" />
@@ -29,9 +29,9 @@
   <main>
     <section class="detail-hero section-shell">
       <div class="detail-hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span>RAG · LLMs · Real-world data</div>
+        <div class="eyebrow"><span class="status-dot"></span>Python · Data pipelines · Retrieval · Testing</div>
         <h1>Turning a huge trading archive into something you can ask questions.</h1>
-        <p class="detail-lede">I built an AI assistant that takes years of scattered commentary, videos, screenshots, and reviews, organizes the information into a searchable knowledge base, finds the right evidence for a question, and uses an LLM to produce a grounded answer.</p>
+        <p class="detail-lede">I built and deployed a Python system that processes commentary, videos, screenshots, and reviews into structured records, retrieves evidence for each question, and delivers source-grounded answers through Discord. The project combines data engineering, search, LLM integration, and automated testing.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#pipeline">See how it works <span aria-hidden="true">↓</span></a>
           <a class="button button-secondary" href="https://github.com/DevingGrosko/TradingResearchPipeline" target="_blank" rel="noreferrer">Public pipeline <span aria-hidden="true">↗</span></a>
@@ -198,11 +198,11 @@
       <div class="story-grid reveal">
         <div>
           <p class="section-kicker">Under the hood</p>
-          <h2>Testing is key</h2>
+          <h2>Making the retrieval pipeline reliable.</h2>
         </div>
         <div class="story-copy">
           <p>The user experience is simple, but the retrieval path has safeguards underneath it: query interpretation, raw and rewritten lexical search, ranking, evidence selection, structured answer generation, and automated validation.</p>
-          <p>The current codebase also includes unit, integration, evaluation, and regression tooling so changes can be checked against known behavior instead of judged only by a few hand-picked demos.</p>
+          <p>I added 300+ unit, integration, and regression tests, alongside evaluation tooling, to check changes against known behavior across the retrieval pipeline.</p>
         </div>
       </div>
 
@@ -226,7 +226,7 @@
 
   <footer class="site-footer section-shell">
     <span>© <span id="year"></span> Devin Grosko</span>
-    <div><a href="index.html">Portfolio</a><a href="https://github.com/DevingGrosko" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/devin-grosko" target="_blank" rel="noreferrer">LinkedIn</a></div>
+    <div><a href="index.html">Portfolio</a><a href="https://github.com/DevingGrosko" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/devin-grosko-759a92289/" target="_blank" rel="noreferrer">LinkedIn</a></div>
   </footer>
   <script src="script.js?v=4"></script>
 </body>

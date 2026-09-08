@@ -1,6 +1,6 @@
 # Devin Grosko — Portfolio
 
-Personal portfolio site for AI and software engineering work.
+Personal portfolio site for software engineering and applied AI work.
 
 ## Local preview
 
